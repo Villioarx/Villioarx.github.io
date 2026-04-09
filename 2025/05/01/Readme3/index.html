@@ -237,8 +237,8 @@
     if (initFn) initWaline(initFn, el, path)
     else {
       // 强制指定版本路径
-      btf.getCSS('https://unpkg.com/@waline/client@3.5.6/dist/waline.css')
-        .then(() => import('https://unpkg.com/@waline/client@3.5.6/dist/waline.js'))
+      btf.getCSS('https://unpkg.com/@waline/client@2.5.1/dist/waline.css')
+        .then(() => import('https://unpkg.com/@waline/client@2.5.1/dist/waline.js'))
         .then(({ init }) => {
           initFn = init || Waline.init
           initWaline(initFn, el, path)
